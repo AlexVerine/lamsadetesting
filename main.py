@@ -14,13 +14,13 @@ import torch.optim as optim
 import argparse
 
 parser = argparse.ArgumentParser(description='Test of memory/CPU/GPU')
-parser.add_argument('--n_memory', default=1000, type=int, metavar='PATH',
+parser.add_argument('--n_memory', default=1000, type=int, metavar='N',
                     help='number of iterations for memory access')
-parser.add_argument('--n_batchs', default=1000, type=int, metavar='PATH',
+parser.add_argument('--n_batchs', default=1000, type=int, metavar='N',
                     help='Number of batchs for the only epoch of testing for cpu/gpu')
-parser.add_argument('--n_test_gpus', default=20, type=int, metavar='PATH',
+parser.add_argument('--n_test_gpus', default=20, type=int, metavar='N',
                     help='number of iterations of generating and training on one epoch on GPU')
-parser.add_argument('--n_test_cpus', default=20, type=int, metavar='PATH',
+parser.add_argument('--n_test_cpus', default=20, type=int, metavar='N',
                     help='number of iterations of generating and training on one epoch on CPU')
 
 
